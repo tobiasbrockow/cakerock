@@ -7,6 +7,16 @@
 
 /* Extras */
 
+button:hover {
+    background-color: #133B5F;
+}
+
+.infodrop {
+    background-color: #133B5F;
+    color: white;
+    font-size: 28px;
+}
+
 .white {
     color:#fff;
 }
@@ -17,6 +27,76 @@
         padding:15px;
     }
 
+.bandback {
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.bandtext {
+    color:white;
+    font-size:16px;
+}
+
+.warumlila {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/warumlila_Foto.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.jumbucks {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Jumbucks_Foto.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.meilenweit {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Meilenweit_Foto.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.logout {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Logout_Foto.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.timeless {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/Timeless.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
 
 /* Global Styles */
 
@@ -26,9 +106,6 @@ body {
     height: 100%;
 }
 
-body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
 
 .text-vertical-center {
     display: table-cell;
@@ -87,7 +164,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #222;
+    background: #133B5F;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -112,7 +189,7 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav li a:hover {
@@ -133,7 +210,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -175,6 +252,8 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
+
+
 
 /* About */
 
