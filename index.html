@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cakerock Festival</title>
+    <title>Cake Rock Festival</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,9 +28,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- For Slider -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 </head>
 
 <body>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -56,10 +61,13 @@
                 <a href="#timeless" onclick = $("#menu-close").click(); >Timeless</a>
             </li>
             <li>
+                <a href="#shop" onclick = $("#menu-close").click(); >Shop</a>
+            </li>
+            <li>
                 <a href="#info" onclick = $("#menu-close").click(); >Info</a>
             </li>
             <li>
-                <a href="#shop" onclick = $("#menu-close").click(); >Shop</a>
+                <a href="#instagram" onclick = $("#menu-close").click(); >#cakerock</a>
             </li>
             <li>
                 <a href="#kontakt" onclick = $("#menu-close").click(); >Kontakt</a>
@@ -82,7 +90,7 @@
             </div>
 
             <br>
-            <a href="#warumlila" class="btn btn-dark btn-lg">Lineup</a> <a href="#info" class="btn btn-dark btn-lg">Info</a> <a href="#shop" class="btn btn-dark btn-lg">Shop</a> <a href="#kontakt" class="btn btn-dark btn-lg">Kontakt</a>
+            <a href="#warumlila" class="btn btn-dark btn-lg">Lineup</a> <a href="#shop" class="btn btn-dark btn-lg">Shop</a> <a href="#info" class="btn btn-dark btn-lg">Info</a> <a href="#kontakt" class="btn btn-dark btn-lg">Kontakt</a>
         </div>
     </header>
 
@@ -217,15 +225,54 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="info" class="services bg-primary">
+
+
+    <!-- Shop -->
+    <section id="shop" class="portfolio">
         <div class="container">
+            <h1 class="cakeheadings">SHOP</h1>
 
-        <h1>INFO</h1>
+            <ul class="cd-gallery">
+        <li>
+            <a href="#shop">
+                <ul class="cd-item-wrapper">
+                    <li class="selected">
+                        <img src="img/Bild_Ticket-VVK.jpg" alt="Preview image">
+                    </li>
+
+                    <li class="move-right" data-sale="true" data-price="$22">
+                        <img src="img/Bild_Ticket-VVK.jpg" alt="Preview image">
+                    </li>
+
+                    <li>
+                        <img src="img/Bild_Ticket-VVK.jpg" alt="Preview image">
+                    </li>
+                </ul> <!-- cd-item-wrapper -->
+            </a>
+
+            <div class="cd-item-info">
+                <b><a href="#">VVK-Ticket</a></b>
+
+                <em class="cd-price">7€</em>
+            </div> <!-- cd-item-info -->
+        </li>
 
 
-            <div class="row">
+    </ul> <!-- cd-gallery -->
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+
+    <section id="info" class="infoblock">
+        <div class="container" style="padding-bottom:20px">
+
+        <h1 class="cakeheadings2">INFO</h1>
+
+
+            <div class="row inforow">
                 <div class="col-md-6">
                     <button href="#einlass" class="btn btn-default infodrop" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Einlass und Beginn</button>
                     <div id="einlass" class="collapse">
@@ -256,7 +303,7 @@
             </div>
             <!-- /.row -->
 
-            <div class="row">
+            <div class="row inforow">
 
             <div class="col-md-6">
             <button href="#essen" class="btn btn-default infodrop" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Essen und Trinken</button>
@@ -279,7 +326,7 @@
             </div>
 
 
-             <div class="row">
+             <div class="row inforow">
 
             <div class="col-md-6">
             <button href="#jugendschutz" class="btn btn-default infodrop" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Jugendschutz</button>
@@ -310,33 +357,27 @@
 
 
 
-    <section id="instagram">
+    <section id="instagram" style="background-color:#0868BF">
 
-        <div class="container">
             <script type="text/javascript">
             var feed = new Instafeed({
                 get: 'tagged',
-                tagName: 'awesome',
-                clientId: '284a01a37e9047519343f6fde921afcb'
+                tagName: 'cakerock',
+                clientId: '403e47a6a7854dfaabb322396d27e9ef',
+                resolution: 'low_resolution',
+                limit: '18',
+                sortBy: 'most-recent',
+                links: 'false'
+
             });
             feed.run();
             </script>
-        </div>
-    </section>
 
+            <div id="instafeed" class="instafeedpics">
 
-    <!-- Shop -->
-    <section id="shop" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    
-                </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+
+
     </section>
 
 
@@ -355,7 +396,7 @@
     <section id="sponsoren" class="portfolio">
         <div class="container">
 
-            <h1>Sponsoren</h1>
+            <h1 class="cakeheadings">Sponsoren</h1>
 
             <div class="row">
                 <div class="col-lg-4">
@@ -459,13 +500,17 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- For Slider -->
+    <script src="js/jquery.mobile.min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 
     <!-- Custom Theme JavaScript -->
     <script>
